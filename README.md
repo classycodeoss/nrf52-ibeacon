@@ -4,6 +4,14 @@ Sample iBeacon implementation for the nRF52 chipset.
 
 The build environment uses CMake and assumes an nRF52 Development Kit from Nordic Semiconductor.
 
+# Usage
+
+Press Button 1 on the DK to start advertising in a loop. LED 2 should light up.
+
+In the default configuration, the beacon will advertise for 3 seconds (LED 3 on) followed by 17 seconds of silence.
+
+In each advertising pulse, the beacon's minor value will increment from 1 to 20.
+
 # Building the firmware
 
 Create a `CMakeEnv.cmake` file on the same level as `CMakeLists.txt`, with the following contents:
