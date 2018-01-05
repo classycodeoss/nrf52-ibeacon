@@ -12,6 +12,12 @@ In the default configuration, the beacon will advertise for 3 seconds (LED 3 on)
 
 In each advertising pulse, the beacon's minor value will increment from 1 to 20.
 
+By default, the beacon broadcasts the following identity:
+
+ * Proximity UUID: 33013f7f-cb46-4db6-b4be-542c310a81eb
+ * Major: 204
+ * Minor: 1 .. 20
+
 # Building the firmware
 
 Create a `CMakeEnv.cmake` file on the same level as `CMakeLists.txt`, with the following contents:
